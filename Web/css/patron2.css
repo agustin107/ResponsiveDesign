@@ -1,0 +1,42 @@
+/*Colores a usar:
+
+Color del bloque principal: #6fa843;
+Color de los bloques secundarios: #96c144 y #cde0aa;
+*/
+
+*{margin: 0px 0px;}
+body{
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 1px 1px 0 black;
+	font-size: 16px;
+}
+section{
+	float: left;
+	width: 30%;
+}
+.columna1{
+	background: #96c144;
+}
+.columna2{
+	background: #6fa843;
+	width: 40%;
+}
+.columna3{
+	background: #cde0aa;
+}
+
+@media screen and (max-width: 800px){
+	.columna2{
+		width: 70%;
+	}
+	.columna3{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	section{
+		width: 100% !important;
+	}
+}
